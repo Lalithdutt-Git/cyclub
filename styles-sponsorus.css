@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  
+  }
+  html,body{
+      width: 100vw;
+      scroll-behavior: smooth;
+      background-color: black;
+      
+body::-webkit-scrollbar {
+    display: none;
+}   
+  }
+ h1{
+    font-size: 2rem;
+    margin-top: -2%; 
+ }
+  p{
+    font-size: 1rem;
+    margin:8px;
+    text-align: center;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+
+  }
+  body{
+      min-height: 100%;
+  }
+  
+  .footer{
+      margin-top: auto; 
+  }
+.sec-1{
+    width: 100vw;
+    background-image: linear-gradient( 109.6deg, rgba(2,0,4,1) 14.2%,rgb(54, 5, 102)91.2% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    
+}
+
+.Check{
+    width : 180px;
+    border : 0;
+    padding: 12px 2px;
+    background: linear-gradient(to right,#cf2e22,#b34708);
+    outline: none;
+    color: #fff;
+    border-radius : 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.5s;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+.Check:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 767px){
+    h1{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+   
+}
+
+@media only screen and (max-width: 375px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .Check:hover{
+        transform: scale(1);
+    }
+    .Check{
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Check:hover{
+        transform: scale(1);
+    }
+
+}
